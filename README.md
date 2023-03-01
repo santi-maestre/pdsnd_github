@@ -1,17 +1,19 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 ### Date created
-Include the date you created this project and README file.
+This project was created the 1st of March 2023.
 
 ### Project Title
-Replace the Project Title
+Explore US Bikeshare Data
 
 ### Description
-Describe what your project is about and what it does
+It's a Python program that uses data provided by Motivate, a bike share system provider, to uncover bike share usage patterns in an interactive way.
 
 ### Files used
-Include the files used
+It uses the next data files:
+- chicago.csv
+- new_york_city.csv
+- washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Thank you to:
+- Motivate for providing data Files
+- Udacity for providing the template for the python program
