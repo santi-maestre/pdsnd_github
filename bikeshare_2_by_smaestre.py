@@ -21,23 +21,27 @@ def get_filters():
     print('\nHello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington)
     while True:
-        city = str(input('\nWhich city would you like to see data: Chicago, New York or Washington?\n')).lower()
+        print('\nWhich city would you like to see data: ')
+        city = str(input('Chicago, New York or Washington?\n')).lower()
         if city in cities:
             break
         else:
             print('\nThis is not a valid city name!')
 
     # get user input for month (all, january, february, ... , june)
-    month = str(input('\nWould you like to filter data by month?\nIf so, please, type a month among these ones:\nJanuary, February, March, April, May or June.\nIf you don\'t want to filter by month type "all"\n')).lower()
+    print('\nWould you like to filter data by month?\nIf so, please, type a month among these ones:')
+    month = str(input('\nJanuary, February, March, April, May or June.\nIf you don\'t want to filter by month type "all"\n')).lower()
     while True:
         if month in months or (month == 'all'):
             break
         else:
             print('\nThis is not a valid name for month filter!')
-            month = str(input('\nIf you\'d like to filter data by month, please, type a month among these ones:\nJanuary, February, March, April, May or June.\nIf you don\'t want to filter by month type "all"\n')).lower()
+            print('\nIf you\'d like to filter data by month, please, type a month among these ones:')
+            month = str(input('\nJanuary, February, March, April, May or June.\nIf you don\'t want to filter by month type "all"\n')).lower()
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
-    day = str(input('\nWould you like to filter data by day of week?\nIf so, please, type the name of the day or type "all" if you don\'t want to filter data by day\n')).lower()
+    print('\nWould you like to filter data by day of week?')
+    day = str(input('\nIf so, please, type the name of the day or type "all" if you don\'t want to filter data by day\n')).lower()
     while True:
         if day in days or (day == 'all'):
             break
@@ -216,8 +220,8 @@ def main():
                     break
 
         #Asks the user to restart or not the program
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
+        if restart != 'yes':
             break
 
 if __name__ == "__main__":
