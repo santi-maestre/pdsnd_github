@@ -178,7 +178,7 @@ def user_stats(df):
         genders = list(user_gender_counts)
         print('\nSplit between genders is:\n{}: {}\n{}: {}\n'.format(genders[0], user_gender_counts[genders[0]], genders[1], user_gender_counts[genders[1]]))
 
-    # Same applies for Birth Year statistics
+    # Same applies for Birth Year statistics, i.e., not al city data files contain Birth Year info
     if 'Birth Year' in df_columns:
         # Display earliest, most recent, and most common year of birth
         earliest_birth_year = int(df['Birth Year'].min())
