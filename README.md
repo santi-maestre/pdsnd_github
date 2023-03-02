@@ -10,14 +10,16 @@ It's a Python program that uses data provided by [Motivate](https://www.motivate
 The program asks the user for a city for which he/she wants to display data. Optionally, a month and/or day of week can be provided by the user to filter data.
 
 As a result the program calculates a set of statistics based on the inputs given by the user. Some of them are:
-- Most frequent start and end time
+- Most common month for bike travels
+- Most common day of week
+- Most frequent start and end times
 - Most frequent start and end stations
 - Most common trip from start to end
 - Average trip duration
-- Count of users per gendre
-- Youngest and oldest users
+- Count of users by gendre
+- Birth Year for youngest and oldest users
 
-It even allows the user to display the raw data on a 5 rows basis.
+It even allows the user to display the raw data used for the statistics on a 5 rows basis.
 
 ### Files used
 It uses the next data files:
